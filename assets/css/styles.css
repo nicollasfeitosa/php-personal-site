@@ -1,0 +1,289 @@
+/* CSS */
+
+/* Conceito de cores 
+
+Rosa/Roxo = #9c00ff
+Azul = #3786ff
+
+*/
+
+
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700&display=swap');
+
+nav {
+    font-family: Quicksand, Roboto, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Smooth Transitions */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*  
+    Estilizando a NAVBAR com custom
+
+    BG DEGRADE NORMAL SEM COMPATIBILIDADE COM OUTROS NAVEGADORES
+
+    .bg-custom {
+    background: rgb(123,1,254);
+    background: linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+
+}*/
+
+/* Background Compatível com diversos navegadores */
+
+.bg-custom {
+    background: rgb(123,1,254);
+    background: -moz-linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+    background: linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b01fe",endColorstr="#01febd",GradientType=1);
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,.6); /* Sombra no Menu */
+}
+
+.nav-link, .navbar-brand {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: white;
+    opacity: 75%;
+    text-decoration: none;
+}
+
+
+/* Alterando o Navbar Toggle */
+.navbar-dark .navbar-toggler {
+    color: white;
+    border-color: white;
+}
+
+.dropdown-custom {
+    background: linear-gradient(60deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dropdown-custom:hover {
+    background: linear-gradient(-60deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Header Snippet */
+header {
+    background: white;
+    padding: 10em 0;
+}
+
+.degrade {
+    background: linear-gradient(60deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Oi eu sou Nick & Emote */
+
+.container-propio {
+    width: 80%;
+	margin: 0 auto;
+	min-width: 20em;
+	max-width: 40em;
+}
+
+header .text {
+    text-align: left;
+    padding-top: .4em;
+    margin: 0;
+}
+
+header .text2 {
+    font-size: 1.6em;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.emote {
+    text-align: right;
+    padding: 0px;
+}
+
+/* Conteudo Geral */
+
+.dark-mode {
+    background: #1F2024;
+    color: white;
+    
+}
+
+.day-mode {
+    background: white;
+    color: #1F2024;
+}
+
+.about {
+    padding: 4em 1em;
+}
+
+.title {
+    text-align: center;
+    color: aliceblue;
+}
+
+.sobre-titulo {
+    text-align: center;
+    padding: .7em 2em;
+    margin: -1em;
+    font-size: 25px;
+    border-radius: 5px;
+    font-family: Quicksand, Roboto, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    background: rgb(123,1,254);
+    background: -moz-linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+    background: linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b01fe",endColorstr="#01febd",GradientType=1);
+    text-decoration: none;
+}
+
+.btn-custom {
+    display: inline-block;
+    padding: 1em 2em;
+    margin: .6em;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 5px;
+    font-family: Quicksand, Roboto, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    background: rgb(123,1,254);
+    background: -moz-linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+    background: linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b01fe",endColorstr="#01febd",GradientType=1);
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    padding: 1em 2em;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 5px;
+    font-family: Quicksand, Roboto, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-decoration: none;
+    opacity: 85%;
+}
+
+.btn-position {
+    text-align: center;
+    padding-top: em;
+}
+
+
+/* Skills */
+
+.skills {
+    text-align: center;
+    padding: 4em 1em;
+}
+
+.skills p {
+    font-size: 1.5em;
+}
+
+.skills h1 {
+    margin-bottom: 1em;
+}
+
+/* sponsors */
+
+.sponsors {
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.sponsorimg {
+    max-width: 30vh;
+    min-width: 20vh;
+    padding: 2em 0;
+}
+
+/* Links */
+
+.links {
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.links p {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+/* Footer Copyright */
+
+.copyright {
+    padding: 2em 0;
+    background: #1F2024;
+    color: white;
+}
+
+.copyright p {
+    text-align: center;
+    margin-bottom: .2em;
+}
+
+/* Media Query do Emote e Texto para > Centro */
+
+@media (max-width: 766px) {
+
+    header .text {
+        text-align: center;
+        font-size: 35px;
+    }
+    header .text2 {
+        text-align: center;
+        padding: .2em 0;
+        font-size: 25px;
+    }
+
+    .emote {
+        text-align: center;
+    }
+
+    .sobre-titulo {
+        text-align: center;
+        padding: .7em 2em;
+        font-size: 20px;
+        border-radius: 5px;
+        font-family: Quicksand, Roboto, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        background: rgb(123,1,254);
+        background: -moz-linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+        background: linear-gradient(90deg, rgba(123,1,254,1) 0%, rgba(59,133,220,1) 50%, rgba(1,254,189,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b01fe",endColorstr="#01febd",GradientType=1);
+        text-decoration: none;
+    }
+
+    /* Mudança na fonte da section Skills */
+
+    .skills p {
+        font-size: 1.2em;
+    }
+
+    .skills h1 {
+        font-size: 2em;
+    }
+}
